@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-    h1{
-    text-align:center; color:gold;border: 2px solid goldenrod; padding: 20px 10px 20px 10px;background-color:white;
-    }
-    #output{
-        color:gold;
-    }
-    h2{
-        color:yellow;
-    }
-    button{
-        border:2px solid goldenrod;background-color:gold;border-radius: 5px;color:white;
-    }
-    #donater{
-        background-color:purple;color:yellow;border: 2px solid goldenrod
-    }
-    input{
-        border-radius:5px;border: 2px solid yellow
-    }
-</style>
+    <style>
+        h1{
+        text-align:center; color:gold;border: 2px solid goldenrod; padding: 20px 10px 20px 10px;background-color:white;
+        }
+        #output{
+            color:gold;
+        }
+        h2{
+            color:yellow;
+        }
+        button{
+            border:2px solid goldenrod;background-color:gold;border-radius: 5px;color:white;
+        }
+        #donater{
+            background-color:purple;color:yellow;border: 2px solid goldenrod
+        }
+        input{
+            border-radius:5px;border: 2px solid yellow
+        }
+    </style>
+    <script>
+        function submit(){
+            var money=document.getElementById("money").value
+            var name=document.getElementById("name").value
+            document.getElementById("output").innerHTML="Thank you for donating "+money+" dollars, "+name+"."
+        }
+    </script>
 </head>
 <body>
     <h1>The Irvine Youth Volunteers</h1>
@@ -58,12 +65,6 @@
         <button onclick="submit()">Donate</button>
         <p id="output"></p>
     </div>
-    <script>
-        function submit(){
-            var money=document.getElementById("money").value
-            var name=document.getElementById("name").value
-            document.getElementById("output").innerHTML="Thank you for donating "+money+" dollars, "+name+"."
-        }
-    </script>
 </body>
 </html>
+
