@@ -59,7 +59,12 @@
         <p id="output"></p>
     </div>
     <script>
-
+        function submit(){
+            var money=document.getElementById("money").value
+            var name=document.getElementById("name").value
+            document.getElementById("output").innerHTML="Thank you for donating "+money+" dollars, "+name+"."
+        }
     </script>
 </body>
+
 </html>
